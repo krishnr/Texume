@@ -1,19 +1,19 @@
-\documentclass[11.5pt,a4paper,sans]{moderncv}
+\documentclass[11.9pt,letterpaper,sans]{moderncv}
 
 \moderncvtheme[black]{classic}
 
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.8, top=2cm, bottom=1.5cm]{geometry}
+\usepackage[scale=0.8, top=2cm, bottom=2cm]{geometry}
 
 
-\firstname{\textbf{\textcolor{color1}{Krishn}}}
+\firstname{\fontsize{40}{42}{\textbf{\textcolor{color1}{Krishn}}}}
 \familyname{\textbf{\textcolor{color1}{Ramesh}}}
-\title{\normalsize Ambitious collection of nerd particles, passionate techie \& software developer.}
+\title{\normalsize }%An ambitious collection of nerd particles, passionate techie \& software developer.}
 \email{krishnr@gmail.com}
-\phone{(226) 979-1174}
 \homepage{krishn.me}
+\phone{(226) 979-1174}
+\social[linkedin][linkedin.com/in/krishnr]{linkedin.com/in/krishnr}
 \social[github][github.com/krishnr]{github.com/krishnr}
-% \social[linkedin][linkedin.com/in/krishnr]{linkedin.com/in/krishnr}
 
 % the ConTeXt symbol
 \def\ConTeXt{%
@@ -39,21 +39,28 @@
 \vspace*{-1.5cm}
 
 \section{\textbf{Skills}}
-		\cvitem{\textbullet}{\textbf{Programming} / JavaScript (ES6), Ruby, C++, Matlab, Git}
-		\cvitem{\textbullet}{\textbf{Web Development} / React, Node.js, Rails, HTML5, CSS3 \& Sass}
-		\cvitem{\textbullet}{\textbf{Data Science} / Statistics, SQL, basic Machine Learning \& Neural Networks}
-		\cvitem{\textbullet}{\textbf{UI Design} / Sketch, Photoshop \& Illustrator; keen eye for aesthetic}
+		\cvitem{\textbullet}{\textbf{Programming} / Python, JavaScript, Ruby, C++, Matlab, Git}
+		\cvitem{\textbullet}{\textbf{Data Science} / Statistics, scikit-learn, basic Machine Learning \& Neural Networks}
+		\cvitem{\textbullet}{\textbf{Web Development} / Flask, React, Node.js, Rails, JS (ES6), HTML5, CSS3 \& Sass}
+		\cvitem{\textbullet}{\textbf{Design} / Sketch, Photoshop \& Illustrator; keen eye for aesthetic}
 		\cvitem{\textbullet}{\textbf{Electronics} / Arduino, circuits, digital systems}
 		\cvitem{\textbullet}{\textbf{Passion} / Tech, design, startups, software, electronics, building the future}
 
 \section{\textbf{Experience}}
 %    \cventry{years}{degree/job title}{institution/employer}{localization}{grade}{description}
+\cventry{Winter 2016}{Software Engineer}{\href{http://yelp.com}{Yelp}}{}{}{
+			{\footnotesize 
+				\begin{itemize}
+				\item \small Built a high-throughput tracking and logging system for messages using Kafka and Cassandra.
+				\item \small Built an automated email system integrated with Salesforce to send and track advertiser emails.
+				\end{itemize}
+			}
+		}
 \cventry{Summer 2015}{Full-Stack Developer}{\href{http://pumpup.com}{PumpUp}}{}{}{
 			{\footnotesize 
 				\begin{itemize}
-				\item \small Built a new notifications system including DB, back-end API and front-end mobile (React).
+				\item \small Built a grouped notifications system including DB changes, back-end API and front-end.
 				\item \small Built an admin dashboard from scratch including front-end (React) and back-end API (Node).
-				\item \small Wrote a fuzzy search algorithm using the Jaccard coefficient for a search utility module.
 				\end{itemize}
 			}
 		}
@@ -61,36 +68,51 @@
 			{\footnotesize 
 				\begin{itemize}
 				\item \small Built \href{http://crowdfind.net}{Crowdfind} (\textbf{\color{see} \href{http://crowdfind.net}{crowdfind.net}}) -- an analytics and discovery platform for crowdfunding projects.
-				\item \small Built the whole app from scratch in Ruby on Rails following Test-Driven Development principles.
-				\item \small Features developed: algorithm to retrieve relevant news, daily scrape jobs for data, RickshawJS graphs, fully responsive design, Google Maps API to map popular projects.
+				\item \small Built from scratch in Rails. Features developed: algorithm to retrieve relevant news, daily scrape jobs for data, RickshawJS graphs, responsive design, Google Maps API to map popular projects.
 				\end{itemize}
 			}
 		}
 		\cventry{Winter 2014}{Software Developer}{\href{http://nthgensoftware.com}{NthGen Software}}{}{}{
 			{\footnotesize 
 				\begin{itemize}
-				\item \small Developed for a high-traffic car auctioning platform called \href{http://traderev.com}{Traderev} (\textbf{\color{see} \href{http://traderev.com}{traderev.com}})
-				\item \small Reduced load time of the Analytics page from 18s to 1s through efficient database querying.
-				\item \small Tasks: prevent account sharing using Redis, scaling AWS dynamically, Freshbooks API for billing.
+				\item \small Worked on a high-traffic car auctioning platform called \href{http://traderev.com}{Traderev} (\textbf{\color{see} \href{http://traderev.com}{traderev.com}})
+				\item \small Tasks: prevent account sharing using Redis, reduced Analytics page load time from 18s to 1s.
 				\end{itemize}
 			}
 		}
-				
-		\cventry{Fall 2015}{Safety/Systems Lead}{\href{http://www.uwhyperloop.com/}{uWaterloo Hyperloop Team}}{\href{http://www.spacex.com/hyperloop}{SpaceX Hyperloop Pod Competition}}{}{}
+		\cventry{Present}{Safety/Systems Lead}{\href{http://www.teamwaterloop.com/}{uWaterloo Hyperloop Team}}{\href{http://www.spacex.com/hyperloop}{SpaceX Hyperloop Pod Competition}}{}{
+			{\footnotesize 
+				\begin{itemize}
+				\item \small Placed in the top 22 out of 180 best engineering schools worldwide in Design Competition.
+				\end{itemize}
+			}
+		}
+
 		
-		
+%comment block
+\iffalse
 \section{\textbf{References}}
 \cvitem{\textbullet}{\small``Extremely intelligent and resourceful. A top 5\% Waterloo intern.'' \footnotesize-- co-founder of Extreme Innovations}
 \cvitem{\textbullet}{\small{``Truly bright individual with high aspirations. Provides substantial value.'' \footnotesize-- CEO of PumpUp}}		
-
+\fi
 		
 \section{\textbf{Projects}}
+		\cvitem{\textbullet}{\textbf{What Are You Feeling?} \footnotesize{-- built at Yelp Hackathon}}
+		\vspace*{-0.15cm}
+		\cvitem{}{
+			{\footnotesize 
+				\begin{itemize}
+				\item Used scikit-learn to cluster business by vibe (e.g. hipster) to make recommendations.
+				\end{itemize}
+			}
+		}
+		\vspace*{-0.5cm}
 		\cvitem{\textbullet}{\textbf{Your Vote} \footnotesize{-- built at Hack The North 2015}}
 		\vspace*{-0.15cm}
 		\cvitem{}{
 			{\footnotesize 
 				\begin{itemize}
-				\item Find out if your Member of Parliament (MP) representative votes on bills the same way you would.	
+				\item Find out if your Member of Parliament (MP) votes on bills the same way you would.	
 				\end{itemize}
 			}
 		}
@@ -104,13 +126,11 @@
 				\end{itemize}
 			}
 		}
-		\vspace*{-0.5cm}
-		\cvitem{\textbullet}{\textbf{Mobile websites for clients -- {\color{see} \href{http://cortelgroup.com}{cortelgroup.com}} \& {\color{see} \href{http://expocity.ca}{expocity.ca}}} \footnotesize{(visit on mobile)}}
 		
-		%comment block
+				%comment block
 		\iffalse
-		
-		\cvitem{\textbullet}{\textbf{\href{http://mixtape-HTN.herokuapp.com}{Mixtape}} \footnotesize{-- built at Hack the North 2014}}
+		\vspace*{-0.5cm}
+		\cvitem{\textbullet}{\textbf{{Mixtape}} \footnotesize{-- built at Hack the North 2014}}
 		\vspace*{-0.15cm}
 		\cvitem{}{
 			{\footnotesize 
@@ -119,10 +139,11 @@
 				\end{itemize}
 			}
 		}
+		
 		\vspace*{-0.5cm}
+		\cvitem{\textbullet}{\textbf{Mobile websites for clients -- {\color{see} \href{http://cortelgroup.com}{cortelgroup.com}} \& {\color{see} \href{http://expocity.ca}{expocity.ca}}} \footnotesize{(visit on mobile)}}
 		
-		\fi
-		
+		\vspace*{-0.5cm}
 		\cvitem{\textbullet}{\textbf{BetterCV}  \footnotesize{-- built at MHacks V}}
 		\vspace*{-0.15cm}
 		\cvitem{}{
@@ -132,6 +153,8 @@
 				\end{itemize}
 			}
 		}
+		\fi
+		
 		\vspace*{-0.5cm}
 	
 
@@ -142,7 +165,8 @@
 		\cvitem{}{
 			{\footnotesize 
 				\begin{itemize}
-				\item Dean's Honours List--Finished in the \textbf{top 10} of the class for every single term in university
+				\item Dean's Honours List--Finished in the \textbf{top 10} of the class for every single term.
+				% \item Research: Applying dynamics models to simulate the effects of monetary policy.
 				\end{itemize}
 			}
 		}
@@ -151,7 +175,7 @@
 \cventry{2013}{International Baccalaureate Diploma}{Glenforest Secondary School}{}{Avg: 98.6\%}{}
 
 \section{\textbf{Interests}}
-		\cvitem{\textbullet}{Guitar, soccer, film, quantum physics, hip hop, sci-fi, economics, NBA, Elon Musk}
+		\cvitem{\textbullet}{Hip-hop, basketball, film, quantum physics, soccer, sci-fi, economics, Elon Musk}
 
 \end{document}
 %% end of file `page.tex'.
