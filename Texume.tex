@@ -5,11 +5,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.8, top=2cm, bottom=2cm]{geometry}
 \usepackage{graphicx}
+\renewcommand*{\titlefont}{\Huge\mdseries\upshape}
+\renewcommand*{\addressfont}{\small\mdseries}
 
-
-\firstname{\fontsize{40}{42}{\textbf{\textcolor{color1}{Krishn}}}}
-\familyname{\fontsize{40}{42}{\textbf{\textcolor{color1}{Ramesh}}}}
-\title{\normalsize }%An ambitious collection of nerd particles, passionate techie \& software developer.}
+\firstname{\fontsize{45}{47}{\textbf{\textcolor{color1}{Krishn}}}}
+\familyname{\fontsize{45}{47}{\textbf{\textcolor{color1}{Ramesh}}}}
+\title{\normalsize An ambitious \& future-thinking product builder who codes.}
 \email{krishnr@gmail.com}
 \phone{(226) 979-1174}
 \social[linkedin][linkedin.com/in/krishnr]{linkedin.com/in/krishnr}
@@ -41,9 +42,9 @@
 
 \section{\textbf{Skills}}
 		\cvitem{\textbullet}{\textbf{Programming} / Python, JavaScript, Ruby, C++, Matlab, Git}
-		\cvitem{\textbullet}{\textbf{Product Management} / Data analysis, specs, lifecycle planning, architecture}
+		\cvitem{\textbullet}{\textbf{Product Management} / Data analysis, UX, specs, user-centered design, leadership}
+		\cvitem{\textbullet}{\textbf{Web Development} / Flask, React, Node.js, Rails, JS (ES6), HTML5, CSS3}
 		\cvitem{\textbullet}{\textbf{Data Science} / Statistics, scikit-learn, basic Machine Learning \& Neural Networks}
-		\cvitem{\textbullet}{\textbf{Web Development} / Flask, React, Node.js, Rails, JS (ES6), HTML5, CSS3 \& Sass}
 		\iffalse
 		\cvitem{\textbullet}{\textbf{Design} / Sketch, Photoshop \& Illustrator; keen eye for aesthetic}
 		\cvitem{\textbullet}{\textbf{Electronics} / Arduino, circuits, digital systems}
@@ -52,7 +53,7 @@
 
 \section{\textbf{Experience}}
 %    \cventry{years}{degree/job title}{institution/employer}{localization}{grade}{description}
-\cventry{Fall 2016}{Program Manager}{\protect\includegraphics[scale=0.035]{ms-logo}\hspace{3px}\underline{\href{http://microsoft.com}{Microsoft}}}{Developer Platform Team}{}{
+\cventry{Fall 2016}{Program Manager}{\protect\includegraphics[scale=0.035]{ms-logo}\hspace{3px}\underline{\href{http://microsoft.com}{Microsoft}}}{Windows Developer Platform Team}{}{
 			{\footnotesize
 				\begin{itemize}
 				\item \small Built an open-source SDK for Xamarin (cross-plat mobile framework) that allows devices to discover, launch URIs and send messages to each other to enable rich cross-device experiences.
@@ -64,11 +65,11 @@
 			{\footnotesize
 				\begin{itemize}
 				\item \small Built a high-throughput tracking and logging system for real-time events using Kafka and Cassandra that appears on the activity feed of millions of Yelp business owners.
-				\item \small Built an automated system integrated with Salesforce to send and track advertiser emails.
+				\item \small Built an automated system integrated with Salesforce to send and track emails to business owners.
 				\end{itemize}
 			}
 		}
-\cventry{Summer 2015}{Full-Stack Developer}{\underline{\href{http://pumpup.com}{PumpUp}}}{}{}{
+\cventry{Summer 2015}{Full-Stack Developer}{\protect\includegraphics[scale=0.045]{pumpup-logo}\hspace{2px}\underline{\href{http://pumpup.com}{PumpUp}}}{}{}{
 			{\footnotesize
 				\begin{itemize}
 				\item \small Architected a grouped notifications system including DB changes, back-end API and front-end.
@@ -76,15 +77,15 @@
 				\end{itemize}
 			}
 		}
-		\cventry{Fall 2014}{Software Developer}{\underline{\href{http://extremeinnovations.com}{Extreme Innovations}}}{}{}{
+		\cventry{Fall 2014}{Software Developer}{\protect\includegraphics[scale=0.15]{extreme-innovations-logo}\hspace{3px}\underline{\href{http://extremeinnovations.com}{Extreme Innovations}}}{}{}{
 			{\footnotesize
 				\begin{itemize}
-				\item \small Built \href{http://crowdfind.net}{Crowdfind} (\textbf{\color{see} \href{http://crowdfind.net}{crowdfind.net}}) -- an analytics and discovery platform for crowdfunding projects.
+				\item \small Built an analytics and discovery platform for crowdfunding projects called Crowdfind.
 				\item \small Built from scratch in Rails. Features developed: algorithm to retrieve relevant news, daily scrape jobs for data, RickshawJS graphs, responsive design, Google Maps API to map popular projects.
 				\end{itemize}
 			}
 		}
-		\cventry{Winter 2014}{Software Developer}{\underline{\href{http://nthgensoftware.com}{NthGen Software}}}{}{}{
+		\cventry{Winter 2014}{Software Developer}{\protect\includegraphics[scale=0.13]{nth-gen-logo}\hspace{3px}\underline{\href{http://nthgensoftware.com}{NthGen Software}}}{}{}{
 			{\footnotesize
 				\begin{itemize}
 				\item \small Worked on a high-traffic car auctioning platform called \href{http://traderev.com}{Traderev} (\textbf{\color{see} \href{http://traderev.com}{traderev.com}})
@@ -127,11 +128,11 @@
 		\cvitem{}{
 			{\footnotesize
 				\begin{itemize}
-				\item Used scikit-learn to cluster business by vibe (e.g. hipster) to make recommendations.
+				\item Used scikit-learn to cluster businesses by vibe (e.g. hipster) to make recommendations.
 				\end{itemize}
 			}
 		}
-		\iffalse
+
 		\vspace*{-0.5cm}
 		\cvitem{\textbullet}{\textbf{Your Vote} \footnotesize{-- built at Hack The North 2015}}
 		\vspace*{-0.15cm}
@@ -142,8 +143,8 @@
 				\end{itemize}
 			}
 		}
-		\fi
 
+		\iffalse
 		\vspace*{-0.5cm}
 		\cvitem{\textbullet}{\textbf{\href{http://gethighered.ca}{GetHighered} {\color{see} \href{http://gethighered.ca}{gethighered.ca}}} \footnotesize{-- student-run startup}}
 		\vspace*{-0.15cm}
@@ -155,8 +156,6 @@
 			}
 		}
 
-				%comment block
-		\iffalse
 		\vspace*{-0.5cm}
 		\cvitem{\textbullet}{\textbf{{Mixtape}} \footnotesize{-- built at Hack the North 2014}}
 		\vspace*{-0.15cm}
@@ -177,7 +176,7 @@
 		\cvitem{}{
 			{\footnotesize
 				\begin{itemize}
-				\item A MEAN app (Mongo, Express, Angular, Node)	for crowdsourced resum\'{e} critiques.
+				\item A MEAN app (Mongo, Express, Angular, Node) for crowdsourced resum\'{e} critiques.
 				\end{itemize}
 			}
 		}
@@ -193,8 +192,8 @@
 		\cvitem{}{
 			{\footnotesize
 				\begin{itemize}
-				\item Dean's Honours List--Finished in the \textbf{top 10} of the class for every single term.
-				%\item Research: Applying dynamics models to simulate the effects of monetary policy.
+				\item Dean's Honours List: Finished in the \textbf{top 10} of the class for every single term.
+				%\item Research: Applying physics models to simulate the effects of monetary policy.
 				\end{itemize}
 			}
 		}
@@ -205,7 +204,7 @@
 \cventry{2013}{International Baccalaureate Diploma}{Glenforest Secondary School}{}{Avg: 98.6\%}{}
 \fi
 \section{\textbf{Interests}}
-		\cvitem{\textbullet}{Hip-hop, basketball, film, quantum physics, soccer, sci-fi, economics, Elon Musk}
+		\cvitem{\textbullet}{Hip-hop, basketball, film, philosophy, soccer, sci-fi, economics, Elon Musk}
 
 \end{document}
 %% end of file `page.tex'.
